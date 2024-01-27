@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.list{
+    display: flex;
+}
+.card{
+    padding: 20px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #777;
+    border-radius: 30px;
+}
+.img{
+    height: calc(200px + 5vh);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+    </style>
 </head>
 <body>
-    <h1>Привет, Питер</h1>
+    <h1>Книги про Гарри Поттера</h1>
+    <div class="list">
+        {%for i in data%}
+        <div class="card">
+            <img src="{{i.preview}}" alt="Картинка" class="img">
+            <h2>
+                {{i}}
+            </h2>
+        </div>
+        {%endfor%}
+    </div>
 </body>
 </html>

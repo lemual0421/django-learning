@@ -1,0 +1,19 @@
+nav{
+    height: fit-content;
+    display: flex;
+    max-width: fit-content;
+    justify-content: space-between;
+}
+
+.nav_link{
+    margin-left: 5px;
+    color: black;
+    text-decoration: none;
+    align-self: center;
+    font-size: 30px;
+}
+.logo{
+    width: 80vh;
+    height: 80vh;
+    margin: 0 auto;
+}
